@@ -1,0 +1,133 @@
+{
+  "status": "canonical-cross-transcription-robustness",
+  "source": {
+    "transcription": "IT2a",
+    "repository": "oklo/voynich_gpt",
+    "commit": "2d7c61c387ad6962de730caf73c48612bc8f6957",
+    "path": "IT2a-n.txt",
+    "git_blob_sha1": "7f491b574b65e5fba6b553e57372c3fa50e10fec",
+    "redistributed": false
+  },
+  "low_dimensional_family": {
+    "population": {
+      "subset": "CAL8",
+      "cal8_valid_tokens": 4946,
+      "exact_high_count_threshold": 21,
+      "high_frequency_exact_forms": 42,
+      "selected_families": 20,
+      "selected_family_tokens": 2670
+    },
+    "weighted_box_coverage": {
+      "box0": 0.42434456928838954,
+      "box1": 0.6902621722846441,
+      "box2": 0.8857677902621723,
+      "box3": 0.9741573033707865
+    },
+    "families_with_at_most_2_effectively_variable_slots": 12,
+    "families_box2_coverage_ge_90pct": 12,
+    "families_box2_coverage_ge_95pct": 11
+  },
+  "context_hand": {
+    "n_tokens": 24233,
+    "n_bifolios": 42,
+    "global_ll_per_token": -1.9248668974863108,
+    "context_ll_per_token": -1.8752817213598834,
+    "hand_ll_per_token": -1.8790075267075381,
+    "context_hand_ll_per_token": -1.8690791686244455,
+    "context_gain_over_global": 0.04958517612642752,
+    "hand_gain_over_global": 0.045859370778772696,
+    "aggregate_context_minus_hand": 0.003725805347654829,
+    "hand_after_context_gain": 0.006202552735437912,
+    "context_beats_global_bifolios": 38,
+    "hand_beats_global_bifolios": 37,
+    "context_beats_hand_bifolios": 20,
+    "context_hand_beats_context_bifolios": 27,
+    "median_bifolio_context_minus_hand": -0.0003545947326091992
+  },
+  "uniform_reuse": {
+    "conditional_lobo": {
+      "n_tokens": 24233,
+      "baseline_ll_per_token": -1.875281721359883,
+      "reuse_ll_per_token": -1.8610262518800555,
+      "gain_per_token": 0.014255469479827488,
+      "positive_bifolios": 30,
+      "fitted_weight": {
+        "median": 2.0,
+        "min": 2.0,
+        "max": 2.0,
+        "counts": {"2": 42}
+      }
+    },
+    "spectrum_simulation": {
+      "observed": {
+        "types": 2842,
+        "hapax": 1418,
+        "mid_2_to_20": 1212,
+        "high_21_plus": 212,
+        "bins": {"1": 1418, "2": 397, "3": 219, "4-5": 231, "6-10": 212, "11-20": 153, "21+": 212}
+      },
+      "n_replicates": 8,
+      "weights": {
+        "1": {"types": {"median": 4159.0, "min": 4131, "max": 4219}, "hapax": {"median": 2867.0, "min": 2818, "max": 2917}, "mid_2_to_20": {"median": 1110.0, "min": 1069, "max": 1124}, "high_21_plus": {"median": 195.5, "min": 190, "max": 200}},
+        "2": {"types": {"median": 3967.0, "min": 3936, "max": 4014}, "hapax": {"median": 2728.5, "min": 2686, "max": 2808}, "mid_2_to_20": {"median": 1044.5, "min": 1012, "max": 1059}, "high_21_plus": {"median": 194.0, "min": 185, "max": 202}},
+        "4": {"types": {"median": 3808.0, "min": 3730, "max": 3824}, "hapax": {"median": 2632.0, "min": 2570, "max": 2663}, "mid_2_to_20": {"median": 982.0, "min": 952, "max": 1008}, "high_21_plus": {"median": 192.5, "min": 190, "max": 197}},
+        "8": {"types": {"median": 3622.0, "min": 3591, "max": 3682}, "hapax": {"median": 2479.5, "min": 2431, "max": 2521}, "mid_2_to_20": {"median": 952.0, "min": 908, "max": 971}, "high_21_plus": {"median": 193.0, "min": 186, "max": 197}},
+        "16": {"types": {"median": 3464.0, "min": 3425, "max": 3512}, "hapax": {"median": 2332.5, "min": 2304, "max": 2400}, "mid_2_to_20": {"median": 936.5, "min": 916, "max": 974}, "high_21_plus": {"median": 191.0, "min": 178, "max": 200}},
+        "32": {"types": {"median": 3317.5, "min": 3296, "max": 3345}, "hapax": {"median": 2162.0, "min": 2116, "max": 2193}, "mid_2_to_20": {"median": 966.5, "min": 938, "max": 992}, "high_21_plus": {"median": 192.0, "min": 185, "max": 204}}
+      }
+    }
+  },
+  "bifolio_local_face_bias": {
+    "n_events": 77741,
+    "focal": {
+      "tau": 20.0,
+      "base_ll_per_event": -0.7657036546495792,
+      "true_local_ll_per_event": -0.7411943484625461,
+      "true_gain": 0.024509306187033238,
+      "true_minus_wrong_source_mean": 0.05129105259719382,
+      "true_better_wrong_mean_directions": 84,
+      "positive_bifolio_true_gain": 28,
+      "positive_bifolio_vs_wrong_mean": 42
+    }
+  },
+  "line_local_ordering": {
+    "all_multiface_events": 38072,
+    "transitions": 37253,
+    "within": {
+      "n": 25331,
+      "observed_same": 0.485097311594489,
+      "line_shuffle_expected": 0.474271305918295,
+      "excess": 0.010826005676193929
+    },
+    "cross": {
+      "n": 11922,
+      "observed_same": 0.48850863949001844,
+      "line_shuffle_expected": 0.4954653192456315,
+      "excess": -0.006956679755613005
+    },
+    "within_positive_bifolios": 34,
+    "cross_positive_bifolios": 15,
+    "per_family": {
+      "10|IRUN": {
+        "within": {"n": 2219, "observed_same": 0.5741324921135647, "line_shuffle_expected": 0.5748857271615265, "excess": -0.0007532350479618932},
+        "cross": {"n": 2295, "observed_same": 0.5851851851851851, "line_shuffle_expected": 0.583896081889546, "excess": 0.0012891032956392292}
+      },
+      "11|END": {
+        "within": {"n": 9644, "observed_same": 0.345810866860224, "line_shuffle_expected": 0.340947155982421, "excess": 0.004863710877802983},
+        "cross": {"n": 3196, "observed_same": 0.3316645807259074, "line_shuffle_expected": 0.35105609774266533, "excess": -0.019391517016757922}
+      },
+      "4|GAL": {
+        "within": {"n": 7069, "observed_same": 0.5726411090677607, "line_shuffle_expected": 0.546296146600306, "excess": 0.026344962467454686},
+        "cross": {"n": 2966, "observed_same": 0.5151719487525287, "line_shuffle_expected": 0.5243608639792167, "excess": -0.00918891522668796}
+      },
+      "6|PED": {
+        "within": {"n": 211, "observed_same": 0.5687203791469194, "line_shuffle_expected": 0.5497630331753551, "excess": 0.01895734597156432},
+        "cross": {"n": 861, "observed_same": 0.4959349593495935, "line_shuffle_expected": 0.4881920247773906, "excess": 0.0077429345722028866}
+      },
+      "7|ERUN": {
+        "within": {"n": 6188, "observed_same": 0.5673884938590821, "line_shuffle_expected": 0.5611236569219907, "excess": 0.006264836937091321},
+        "cross": {"n": 2604, "observed_same": 0.5629800307219662, "line_shuffle_expected": 0.5642600168312777, "excess": -0.0012799861093114352}
+      }
+    }
+  }
+}

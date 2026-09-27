@@ -1,0 +1,55 @@
+{
+  "release": "v0.8",
+  "date": "2026-09-27",
+  "input": {
+    "repository": "matthewdgreen/cipher_benchmark",
+    "commit": "729aad62d12483c549e64a2541d4f9255538c8cf",
+    "path": "benchmark/unsolved/sources/voynich/transcriptions/ZL3b-n.txt",
+    "git_blob_sha1": "2a4533ab9bdfa85db9bad602d590978953055df1",
+    "redistributed": false
+  },
+  "core_commands": [
+    {
+      "claim": "high-frequency families occupy a low-dimensional concrete-face subset",
+      "script": "canonical/tests/low_dimensional_family.py",
+      "expected": "canonical/results/low_dimensional_family_expected.json"
+    },
+    {
+      "claim": "context and hand both predict exact choice beyond a family baseline, without robust context>hand dominance",
+      "script": "canonical/tests/context_hand.py",
+      "expected": "canonical/results/context_hand_expected.json"
+    },
+    {
+      "claim": "uniform all-seen exact reuse is predictive but insufficient to reproduce exact-form concentration",
+      "script": "canonical/tests/uniform_reuse.py",
+      "expected": "canonical/results/uniform_reuse_expected.json"
+    },
+    {
+      "claim": "the opposite half of the true bifolio predicts concrete face choice beyond context+hand and better than wrong-bifolio halves",
+      "script": "canonical/tests/bifolio_local_face_bias.py",
+      "expected": "canonical/results/bifolio_local_face_bias_expected.json"
+    },
+    {
+      "claim": "line-composition-preserving ordering excess remains within lines but not across line boundaries",
+      "script": "frozen/human_operation/run_freeze.py",
+      "expected": "frozen/human_operation/expected_results.json"
+    }
+  ],
+  "one_command": "python tools/run_core_evidence.py --fetch",
+  "interpretation_ceiling": "These tests support a constrained generative account and show that substantial structure can be modeled without plaintext semantics. They do not by themselves prove that the historical production process was mechanical, nonsemantic, or unique.",
+  "transcription_robustness": {
+    "alternate_input": {
+      "transcription": "IT2a",
+      "repository": "oklo/voynich_gpt",
+      "commit": "2d7c61c387ad6962de730caf73c48612bc8f6957",
+      "path": "IT2a-n.txt",
+      "git_blob_sha1": "7f491b574b65e5fba6b553e57372c3fa50e10fec",
+      "redistributed": false
+    },
+    "script": "canonical/tests/it2a_robustness.py",
+    "expected": "canonical/results/it2a_robustness_expected.json",
+    "runner": "python tools/run_transcription_robustness.py --fetch",
+    "scope": "one alternate EVA transcription of the same manuscript; not universal transcription validation"
+  },
+  "one_command_all": "python tools/run_all_evidence.py --fetch"
+}

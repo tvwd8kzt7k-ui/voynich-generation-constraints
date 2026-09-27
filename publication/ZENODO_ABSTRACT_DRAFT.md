@@ -1,0 +1,13 @@
+# Zenodo abstract draft
+
+This release provides an executable reproducibility package for a set of statistical constraints on the generation of Voynich transcription strings. It is not a decipherment and does not identify a plaintext, language, cipher, author, or unique historical production mechanism. The aim is narrower: to define measurements that any proposed account of Voynichese generation should be able to explain.
+
+The primary analyses use a byte-pinned ZL3b transcription and a frozen set of 42 bifolios. High-frequency family forms show strongly low-dimensional concrete variation: fixing all slots to family-modal faces covers 43.88% of CAL8 tokens, while freeing the one, two, or three most variable slots raises coverage to 71.03%, 90.02%, and 97.83%. Conditional exact-form models show predictive effects of both manuscript context (+0.04964 nats/token) and scribal hand (+0.04667 nats/token) beyond a global family-conditioned baseline. Uniform reinforcement of all previously seen exact forms also improves prediction (+0.01414 nats/token) but remains insufficient to reproduce the observed concentration of exact forms.
+
+A bifolio-local test conditions baseline face choice on slot, family, context, and hand, then asks whether the opposite half of the same bifolio provides additional information. The true bifolio source improves prediction by +0.02482 nats/event and exceeds the mean wrong-bifolio source by +0.05151 nats/event; the true-minus-wrong mean is positive in all 42 tested bifolios. Separately, a line-composition-preserving null leaves a small within-line same-face ordering excess (+0.01088) but not a cross-line excess (−0.00737).
+
+The same canonical definitions were applied to IT2a, an alternate transcription of the same manuscript. The principal effects retain the same direction and closely similar magnitude, including box-3 coverage (97.42%), bifolio-local gain (+0.02451), true-minus-wrong mean (+0.05129; 42/42 bifolios positive), and the within/cross-line sign pattern. This is a transcription-robustness check, not independent-corpus replication.
+
+The package supplies one-command runners that fetch pinned public transcription copies, verify source identity, execute the analyses, and compare outputs with frozen machine-readable checkpoints. Because the 42-bifolio set was repeatedly inspected during exploratory model development, the release should be treated as reproducible exploratory/frozen evidence rather than pristine preregistered confirmation.
+
+The results support a constrained generative account and provide a reproducible target set for language, cipher, copying, pseudo-language, stochastic, or mechanical hypotheses. They do not by themselves establish semantic absence or a unique historical mechanism.

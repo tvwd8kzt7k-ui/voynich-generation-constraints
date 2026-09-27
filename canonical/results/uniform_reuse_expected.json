@@ -1,0 +1,34 @@
+{
+  "status": "canonical-current-analysis",
+  "conditional_lobo": {
+    "n_tokens": 24250,
+    "baseline_ll_per_token": -1.818778845013378,
+    "reuse_ll_per_token": -1.8046429343511377,
+    "gain_per_token": 0.01413591066224035,
+    "positive_bifolios": 29,
+    "fitted_weight": {
+      "median": 2.0,
+      "min": 2.0,
+      "max": 2.0,
+      "counts": {"2": 42}
+    }
+  },
+  "spectrum_simulation": {
+    "observed": {
+      "types": 2711,
+      "hapax": 1343,
+      "mid_2_to_20": 1160,
+      "high_21_plus": 208,
+      "bins": {"1": 1343, "2": 383, "3": 197, "4-5": 219, "6-10": 215, "11-20": 146, "21+": 208}
+    },
+    "n_replicates": 8,
+    "weights": {
+      "1": {"summary": {"types": {"median": 4000.5, "min": 3979, "max": 4041}, "hapax": {"median": 2739.0, "min": 2717, "max": 2801}, "mid_2_to_20": {"median": 1071.5, "min": 1038, "max": 1090}, "high_21_plus": {"median": 190.0, "min": 187, "max": 197}}},
+      "2": {"summary": {"types": {"median": 3813.0, "min": 3750, "max": 3841}, "hapax": {"median": 2630.0, "min": 2546, "max": 2689}, "mid_2_to_20": {"median": 989.5, "min": 960, "max": 1026}, "high_21_plus": {"median": 190.5, "min": 190, "max": 192}}},
+      "4": {"summary": {"types": {"median": 3619.5, "min": 3594, "max": 3663}, "hapax": {"median": 2484.5, "min": 2461, "max": 2540}, "mid_2_to_20": {"median": 942.5, "min": 931, "max": 963}, "high_21_plus": {"median": 188.0, "min": 181, "max": 193}}},
+      "8": {"summary": {"types": {"median": 3456.0, "min": 3416, "max": 3483}, "hapax": {"median": 2351.0, "min": 2321, "max": 2402}, "mid_2_to_20": {"median": 915.5, "min": 883, "max": 946}, "high_21_plus": {"median": 187.0, "min": 186, "max": 189}}},
+      "16": {"summary": {"types": {"median": 3295.0, "min": 3261, "max": 3309}, "hapax": {"median": 2192.5, "min": 2157, "max": 2205}, "mid_2_to_20": {"median": 918.0, "min": 899, "max": 923}, "high_21_plus": {"median": 186.0, "min": 181, "max": 193}}},
+      "32": {"summary": {"types": {"median": 3149.5, "min": 3112, "max": 3219}, "hapax": {"median": 2046.5, "min": 1982, "max": 2120}, "mid_2_to_20": {"median": 921.0, "min": 904, "max": 954}, "high_21_plus": {"median": 190.0, "min": 181, "max": 195}}}
+    }
+  }
+}

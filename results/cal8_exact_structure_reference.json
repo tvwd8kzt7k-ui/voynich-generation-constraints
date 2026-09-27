@@ -1,0 +1,66 @@
+{
+  "status": "reconstructed-from-log",
+  "cal8_exact_frequency": {
+    "n_tokens": 4963,
+    "unique_exact_types": 1181,
+    "type_bins": {
+      "1": 687,
+      "2": 169,
+      "3": 70,
+      "4-5": 86,
+      "6-10": 75,
+      "11-20": 47,
+      "21+": 47
+    }
+  },
+  "cal8_high_frequency_neighborhood": {
+    "threshold_count_ge": 21,
+    "exact_forms": 47,
+    "distinct_family_forms": 24,
+    "distinct_skeletons": 24,
+    "within_family_pairwise_face_hamming": {
+      "pairs": 33,
+      "distance_1": 23,
+      "distance_2": 10,
+      "distance_ge_3": 0
+    }
+  },
+  "clean42_observed_exact_spectrum": {
+    "n_tokens": 24250,
+    "unique_exact_types": 2711,
+    "ttr": 0.11179381443298969,
+    "hapax": 1343,
+    "count_ge_21": 208,
+    "count_ge_50": 96,
+    "raw_cross_half_exact_recurrence": {
+      "hits": 10454,
+      "target_tokens": 17326,
+      "rate": 0.6033706568163454,
+      "split": "pages [0,3] vs [1,2], both directions",
+      "positions": "strict line interiors for both source repertoire and target"
+    }
+  },
+  "cal8_family_variable_slot_audit": {
+    "audited_families": 24,
+    "family_tokens": 2817,
+    "active_variable_definition": {
+      "modal_face_share_lt": 0.95,
+      "alternative_face_count_ge": 5
+    },
+    "families_with_at_most_2_effectively_variable_slots": 16,
+    "active_variable_slot_histogram": {
+      "0": 5,
+      "1": 3,
+      "2": 8,
+      "3": 6,
+      "4": 2
+    },
+    "weighted_coverage": {
+      "top1": 0.7103301384451545,
+      "top2": 0.9002484913028044,
+      "top3": 0.9783457578984736
+    },
+    "families_top2_coverage_ge_90pct": 16,
+    "families_top2_coverage_ge_95pct": 15
+  }
+}
