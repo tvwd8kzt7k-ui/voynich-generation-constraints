@@ -1,0 +1,20 @@
+{
+  "status": "canonical-current-analysis",
+  "population": {
+    "subset": "CAL8",
+    "cal8_valid_tokens": 4963,
+    "exact_high_count_threshold": 21,
+    "high_frequency_exact_forms": 47,
+    "selected_families": 24,
+    "selected_family_tokens": 2817
+  },
+  "weighted_box_coverage": {
+    "box0": 0.4387646432374867,
+    "box1": 0.7103301384451545,
+    "box2": 0.9002484913028044,
+    "box3": 0.9783457578984736
+  },
+  "families_with_at_most_2_effectively_variable_slots": 16,
+  "families_box2_coverage_ge_90pct": 16,
+  "families_box2_coverage_ge_95pct": 15
+}

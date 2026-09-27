@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "source_commit": "729aad62d12483c549e64a2541d4f9255538c8cf",
+    "source_git_blob_sha1": "2a4533ab9bdfa85db9bad602d590978953055df1",
+    "all_multiface_events": 37481
+  },
+  "line_reset_lobo": {
+    "transitions": 36663,
+    "within_events": 24832,
+    "cross_line_events": 11831,
+    "line_preserving_permutation": {
+      "within": {
+        "n": 24832,
+        "observed_same": 0.4876771907216495,
+        "line_shuffle_expected": 0.4767946659940826,
+        "excess": 0.010882524727566898
+      },
+      "cross": {
+        "n": 11831,
+        "observed_same": 0.4879553714817006,
+        "line_shuffle_expected": 0.4953253434907,
+        "excess": -0.0073699720089994165
+      }
+    },
+    "within_positive_bifolios": 31,
+    "cross_positive_bifolios": 15,
+    "per_family_line_null": {
+      "4|GAL": {
+        "within": {
+          "n": 6916,
+          "observed_same": 0.5798149219201851,
+          "line_shuffle_expected": 0.5523726899666874,
+          "excess": 0.027442231953497636
+        },
+        "cross": {
+          "n": 2959,
+          "observed_same": 0.5136870564379858,
+          "line_shuffle_expected": 0.5229458681918178,
+          "excess": -0.009258811753831976
+        }
+      },
+      "6|PED": {
+        "within": {
+          "n": 198,
+          "observed_same": 0.5757575757575758,
+          "line_shuffle_expected": 0.5569023569023567,
+          "excess": 0.018855218855219076
+        },
+        "cross": {
+          "n": 829,
+          "observed_same": 0.49095295536791317,
+          "line_shuffle_expected": 0.4861881785283473,
+          "excess": 0.004764776839565866
+        }
+      },
+      "7|ERUN": {
+        "within": {
+          "n": 6055,
+          "observed_same": 0.5663088356729975,
+          "line_shuffle_expected": 0.5613006903180446,
+          "excess": 0.005008145354952911
+        },
+        "cross": {
+          "n": 2587,
+          "observed_same": 0.561654425976034,
+          "line_shuffle_expected": 0.5665627970150353,
+          "excess": -0.0049083710390013325
+        }
+      },
+      "10|IRUN": {
+        "within": {
+          "n": 2179,
+          "observed_same": 0.5745754933455713,
+          "line_shuffle_expected": 0.5733014270416744,
+          "excess": 0.0012740663038969524
+        },
+        "cross": {
+          "n": 2272,
+          "observed_same": 0.5867077464788732,
+          "line_shuffle_expected": 0.5817830245361051,
+          "excess": 0.004924721942768168
+        }
+      },
+      "11|END": {
+        "within": {
+          "n": 9484,
+          "observed_same": 0.3484816533108393,
+          "line_shuffle_expected": 0.3438833262430972,
+          "excess": 0.004598327067742099
+        },
+        "cross": {
+          "n": 3184,
+          "observed_same": 0.33291457286432163,
+          "line_shuffle_expected": 0.3524617861918771,
+          "excess": -0.01954721332755554
+        }
+      }
+    }
+  }
+}

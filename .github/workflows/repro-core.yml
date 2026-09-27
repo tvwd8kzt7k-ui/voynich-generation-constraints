@@ -1,0 +1,34 @@
+name: reproduce-core-evidence
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'canonical/**'
+      - 'frozen/human_operation/**'
+      - 'exploratory/log_reconstruction/**'
+      - 'results/cal8_exact_structure_reference.json'
+      - 'tools/run_core_evidence.py'
+      - 'tools/run_transcription_robustness.py'
+      - 'tools/run_all_evidence.py'
+      - 'CORE_EVIDENCE_MANIFEST.json'
+      - '.github/workflows/repro-core.yml'
+  pull_request:
+    paths:
+      - 'canonical/**'
+      - 'frozen/human_operation/**'
+      - 'exploratory/log_reconstruction/**'
+      - 'results/cal8_exact_structure_reference.json'
+      - 'tools/**'
+      - 'CORE_EVIDENCE_MANIFEST.json'
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reproduce ZL3b and IT2a evidence
+        run: python tools/run_all_evidence.py --fetch

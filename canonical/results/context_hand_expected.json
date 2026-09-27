@@ -1,0 +1,18 @@
+{
+  "status": "canonical-current-analysis",
+  "n_tokens": 24250,
+  "n_bifolios": 42,
+  "global_ll_per_token": -1.8684192486711548,
+  "context_ll_per_token": -1.818778845013378,
+  "hand_ll_per_token": -1.821746112070562,
+  "context_hand_ll_per_token": -1.8126101672567894,
+  "context_gain_over_global": 0.049640403657776874,
+  "hand_gain_over_global": 0.046673136600592656,
+  "aggregate_context_minus_hand": 0.0029672670571842187,
+  "hand_after_context_gain": 0.006168677756588632,
+  "context_beats_global_bifolios": 38,
+  "hand_beats_global_bifolios": 38,
+  "context_beats_hand_bifolios": 18,
+  "context_hand_beats_context_bifolios": 26,
+  "median_bifolio_context_minus_hand": -0.0008058294145594772
+}

@@ -1,0 +1,54 @@
+{
+  "status": "canonical-current-analysis",
+  "n_events": 76120,
+  "tau_grid": {
+    "5": {
+      "true_gain_over_context_hand_baseline": 0.021812453248853572,
+      "true_minus_wrong_source_mean": 0.07114079043999556,
+      "true_better_wrong_mean_directions": 84,
+      "positive_bifolios_vs_wrong_mean": 42
+    },
+    "10": {
+      "true_gain_over_context_hand_baseline": 0.023652468407920024,
+      "true_minus_wrong_source_mean": 0.061973868315465246,
+      "true_better_wrong_mean_directions": 84,
+      "positive_bifolios_vs_wrong_mean": 42
+    },
+    "20": {
+      "true_gain_over_context_hand_baseline": 0.02482499021176735,
+      "true_minus_wrong_source_mean": 0.051511769083404206,
+      "true_better_wrong_mean_directions": 83,
+      "positive_bifolios_vs_wrong_mean": 42
+    },
+    "50": {
+      "true_gain_over_context_hand_baseline": 0.024476192571893107,
+      "true_minus_wrong_source_mean": 0.03680756945269172,
+      "true_better_wrong_mean_directions": 82,
+      "positive_bifolios_vs_wrong_mean": 41
+    },
+    "100": {
+      "true_gain_over_context_hand_baseline": 0.022237432287923443,
+      "true_minus_wrong_source_mean": 0.02649446838702962,
+      "true_better_wrong_mean_directions": 82,
+      "positive_bifolios_vs_wrong_mean": 41
+    },
+    "200": {
+      "true_gain_over_context_hand_baseline": 0.018369698416767315,
+      "true_minus_wrong_source_mean": 0.01790600274394194,
+      "true_better_wrong_mean_directions": 81,
+      "positive_bifolios_vs_wrong_mean": 39
+    }
+  },
+  "focal": {
+    "tau": 20,
+    "base_ll_per_event": -0.7641429918013969,
+    "true_local_ll_per_event": -0.7393180015896296,
+    "true_gain": 0.02482499021176735,
+    "true_minus_wrong_source_mean": 0.051511769083404206,
+    "true_better_wrong_mean_directions": 83,
+    "top1_directions": 27,
+    "top5_directions": 58,
+    "positive_bifolio_true_gain": 28,
+    "positive_bifolio_vs_wrong_mean": 42
+  }
+}
