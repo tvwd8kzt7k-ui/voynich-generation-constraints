@@ -9,14 +9,14 @@ version: "v0.8-executable"
 license: CC-BY-4.0
 preferred-citation:
   type: report
-  title: "Generative Constraints in the Voynich Manuscript: From Known Structure to Reproducible Tests"
+  title: "Reproducible Generative Constraints in Voynichese"
   authors:
     - family-names: "Matsuda"
       given-names: "Daiki"
   year: 2026
-  date-published: "2026-09-14"
-  version: "v1"
-  doi: "10.5281/zenodo.22754587"
-  url: "https://zenodo.org/records/22754587"
+  date-published: "2026-09-28"
+  version: "v0.8-executable"
+  doi: "10.5281/zenodo.23000054"
+  url: "https://zenodo.org/records/23000054"
   publisher:
     name: "Zenodo"
