@@ -116,7 +116,7 @@ This is the point of the instrument: it localizes what still needs explanation.
 
 ## Relationship to the parent repository
 
-This is a self-contained candidate for a new diagnostic layer of `voynich-generation-constraints`. It does not replace the existing canonical evidence package, the Timm audit, or historical exploratory records. It packages the later FAMILY/null decomposition as a reusable expert-facing instrument.
+This is the frozen v0.1 diagnostic layer of `voynich-generation-constraints`. It does not replace the existing canonical evidence package, the Timm audit, or historical exploratory records. It packages the later FAMILY/null decomposition as a reusable expert-facing instrument.
 
 ## Reference-population note
 
