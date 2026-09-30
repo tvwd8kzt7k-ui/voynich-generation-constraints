@@ -4,6 +4,8 @@
 
 **Daiki Matsuda — technical report v0.1 — 2026-09-30**
 
+**DOI:** `10.5281/zenodo.23065615`
+
 ## Abstract
 
 Statistical studies of the Voynich Manuscript often ask whether a proposed generator reproduces a set of manuscript-like measurements. This report asks a different question: **when an apparent recurrence effect is observed, at what structural level does it disappear once progressively more local composition is preserved?**
