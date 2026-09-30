@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Voynich Generative Diagnostic Toolkit (VGDT)"
+message: "If you use this diagnostic package, please cite the archived release when a DOI is available; until then cite this software version and the parent Voynich generative-constraints project."
+type: software
+authors:
+  - family-names: Matsuda
+    given-names: Daiki
+version: 0.1.0
+date-released: 2026-09-30
+repository-code: "https://github.com/tvwd8kzt7k-ui/voynich-generation-constraints"
