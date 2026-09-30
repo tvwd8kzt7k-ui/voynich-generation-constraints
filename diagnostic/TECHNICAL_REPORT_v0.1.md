@@ -235,14 +235,14 @@ Fifth, permutation significance only measures deviation from the specified null.
 
 Sixth, the panel does not test semantic content, translation, decipherability, authorship, chronology, or physical writing procedure.
 
-## 13. Reproducibility and release criterion
+## 13. Reproducibility and release status
 
-The v0.1 release candidate contains:
+The frozen v0.1 implementation contains:
 
 - `PROTOCOL_FREEZE_v0.1.md` — scientific definitions and anti-tuning rule;
 - `vgdt.py` — standard-library-only implementation;
 - `REFERENCE_EXPECTATIONS.json` — deterministic golden subset;
-- `REFERENCE_VALIDATION.md` — independent recomputation notes;
+- `REFERENCE_VALIDATION.md` — independent recomputation and connected-machine validation notes;
 - `CLAIM_SET_v0.1.md` — claim and interpretation boundaries;
 - unit tests and a one-command reference suite.
 
@@ -253,9 +253,19 @@ python -m unittest discover -s tests -v
 python vgdt.py reference-suite --fetch --check REFERENCE_EXPECTATIONS.json
 ```
 
-The second command verifies the pinned public inputs and exits non-zero if the frozen checkpoints fail to reproduce. The scientific definition is not to be altered to make a failed software parity check pass.
+On 2026-10-01, the current GitHub `main` snapshot was downloaded as a fresh ZIP and tested from `diagnostic/` on a normally networked Windows environment.
 
-The v0.1 instrument is considered release-ready once this one-command replay succeeds on a normally networked clean environment. Completion of that software gate does not depend on deciphering or historically identifying the Voynich text.
+The unit-test suite completed successfully with all 9 tests passing. The complete three-corpus reference suite then fetched and verified the pinned ZL3b, Timm, and Naibbe inputs and completed with:
+
+```text
+REFERENCE CHECK OK
+```
+
+The connected-machine software parity gate for v0.1 is therefore passed.
+
+The scientific definitions were not changed to obtain this result. FAMILY definitions, cue definitions, lag bins, null definitions, deterministic seeds, and return-chain categories remain those frozen in `PROTOCOL_FREEZE_v0.1.md`.
+
+The remaining work for v0.1 is archival rather than analytical: final citation metadata, an immutable release tag, and the corresponding Zenodo archive. No additional Voynich result is required for release.
 
 ## 14. Strongest supported conclusion
 
