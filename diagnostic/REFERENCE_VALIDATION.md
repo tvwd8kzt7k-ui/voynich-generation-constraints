@@ -2,6 +2,8 @@
 
 Date: 2026-09-30
 
+Updated: 2026-10-01
+
 ## What has been independently checked
 
 The three public reference files were read at their pinned Git commits and their blob identities were independently confirmed:
@@ -32,15 +34,32 @@ Earlier exploratory runs used the same scientific null definitions but did not y
 
 A second difference is population scope. The earlier line-composition report quoted the historical held-out TEST split (`LINE+CUE lag1 z ≈ +2.58`). The v0.1 reference suite deliberately profiles the full clean42 corpus, where the corresponding frozen run gives `z ≈ +3.56`. These are different populations, not conflicting estimates.
 
-## Remaining release check
+## Connected-machine release replay
 
-The current execution environment cannot make outbound network requests from the local Python process, so the packaged Python CLI has not yet performed its own direct `--fetch` replay against the three public files here. This is an environment limitation, not a missing analysis definition.
+On 2026-10-01, the current GitHub `main` repository snapshot was downloaded as a fresh ZIP and tested from `diagnostic/` on a normal networked Windows environment.
 
-Before public release, run on a normal connected machine:
+The packaged unit-test suite completed successfully:
+
+```text
+Ran 9 tests in 0.029s
+
+OK
+```
+
+The frozen three-corpus reference suite was then executed directly with network fetching enabled:
 
 ```bash
-python -m unittest discover -s tests -v
 python vgdt.py reference-suite --fetch --check REFERENCE_EXPECTATIONS.json
 ```
 
-The second command must end with `REFERENCE CHECK OK`. No scientific definition is to be changed to make the check pass; any mismatch is an implementation/parity bug to diagnose.
+The run fetched and verified the pinned ZL3b, Timm, and Naibbe inputs, profiled all three corpora, and completed with:
+
+```text
+REFERENCE CHECK OK
+```
+
+This closes the v0.1 connected-machine software parity gate for the current repository implementation.
+
+The frozen scientific definitions, reference expectations, FAMILY representation, cue definition, lag bins, null models, deterministic seeds, and return-chain categories were not changed to obtain this result.
+
+Future failures of this replay should therefore be treated as implementation, environment, source-availability, or provenance problems unless a new protocol version is explicitly created.
